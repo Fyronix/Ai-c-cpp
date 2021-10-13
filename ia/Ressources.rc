@@ -1,0 +1,151 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD DIALOGEX 0, 0, 270, 250
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "Reconnaissance des formes"
+MENU Menu
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        EditSymbolToCreate,98,33,74,12,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    PUSHBUTTON      "Creer symbole",ButCreateSymbol,98,50,74,14
+    COMBOBOX        ComSymbolToCorrect,92,82,87,12,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Corriger symbole",ButCorrectSymbol,98,101,74,14
+    EDITTEXT        EditMaxIterations,94,123,42,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        EditCorrectionValue,218,123,42,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Apprentissage automatique",ButAutoLearn,146,139,114,13
+    CONTROL         "",ImgInitialSymbol,"Static",SS_WHITERECT,10,19,76,97,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "Nombre max d'itérations : ",IDC_STATIC,10,125,80,10
+    LTEXT           "Symbole initiale :",IDC_STATIC,10,7,57,10
+    LTEXT           "Nom du symbole a créer :",IDC_STATIC,95,19,82,9
+    LTEXT           "Symbole reconnu :",IDC_STATIC,184,7,61,10
+    CONTROL         "",ImgRecognizedSymbol,"Static",SS_WHITERECT,184,19,76,
+                    97,WS_EX_CLIENTEDGE
+    LTEXT           "Nom du symbole a corriger :",IDC_STATIC,92,69,87,9
+    LTEXT           "Valeur de correction : ",IDC_STATIC,145,125,70,10
+    LTEXT           "Détail apprentissage :",IDC_STATIC,10,155,70,10
+    EDITTEXT        EditErrorPercentage,94,139,42,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Pourcentage d'erreur : ",IDC_STATIC,10,140,70,10
+    CONTROL         "List1",ListTrainingDetail,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,10,166,250,75
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "bin241.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "IDD", DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 267
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 247
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+Menu MENU DISCARDABLE 
+BEGIN
+    POPUP "Fichier"
+    BEGIN
+        MENUITEM "Nouveau",                     NewNetwork
+        MENUITEM "Ouvrir",                      OpenNetwork
+        MENUITEM "Enregistrer",                 SaveNetwork
+        MENUITEM "Enregistrer Sous",            SaveNetworkAs
+        MENUITEM SEPARATOR
+        MENUITEM "Quitter",                     Quit
+    END
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
